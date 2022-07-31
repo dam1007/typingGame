@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타자게임</title>
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <h1>타자게임</h1>
+    </header>
+    <main id="main">
+        <!-- 단어출력 -->
+        <div class="word-display">
+            hello
+        </div>
+        <!-- 단어입력 -->
+        <div class="word-input-box">
+            <input class="word-input" type="text">
+        </div>
+        
+        <div class="game-info">
+            <!-- 시간제한 -->
+            <div>Time: <span class="time">0</span>
+            </div>
+            <!-- 점수제한 -->
+            <div>
+                Score: <span class="score">0</span>
+            </div>
+        </div>
+        <!-- 로딩창 -->
+        <button class="button loading" onclick="run()">Loading...</button>
+    </main>
+
+    <!-- script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
